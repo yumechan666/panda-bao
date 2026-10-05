@@ -1,0 +1,793 @@
+{
+  "image": "/generated-assets/library_tea_reactions-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 4,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "clock_termite_hit_1",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 23,
+        "y": 105,
+        "w": 329,
+        "h": 284
+      },
+      "anchor": {
+        "x": 188,
+        "y": 388
+      }
+    },
+    {
+      "name": "clock_termite_hit_2",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 430,
+        "y": 47,
+        "w": 346,
+        "h": 341
+      },
+      "anchor": {
+        "x": 603,
+        "y": 387
+      }
+    },
+    {
+      "name": "clock_termite_hit_3",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 793,
+        "y": 161,
+        "w": 372,
+        "h": 229
+      },
+      "anchor": {
+        "x": 979,
+        "y": 389
+      }
+    },
+    {
+      "name": "clock_termite_hit_4",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1213,
+        "y": 81,
+        "w": 330,
+        "h": 308
+      },
+      "anchor": {
+        "x": 1378,
+        "y": 388
+      }
+    },
+    {
+      "name": "clock_termite_hit_5",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1602,
+        "y": 99,
+        "w": 329,
+        "h": 290
+      },
+      "anchor": {
+        "x": 1767,
+        "y": 388
+      }
+    },
+    {
+      "name": "clock_termite_stagger_1",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 19,
+        "y": 498,
+        "w": 348,
+        "h": 280
+      },
+      "anchor": {
+        "x": 193,
+        "y": 777
+      }
+    },
+    {
+      "name": "clock_termite_stagger_2",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 419,
+        "y": 432,
+        "w": 355,
+        "h": 349
+      },
+      "anchor": {
+        "x": 597,
+        "y": 780
+      }
+    },
+    {
+      "name": "clock_termite_stagger_3",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 792,
+        "y": 545,
+        "w": 337,
+        "h": 235
+      },
+      "anchor": {
+        "x": 961,
+        "y": 779
+      }
+    },
+    {
+      "name": "clock_termite_stagger_4",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1189,
+        "y": 433,
+        "w": 367,
+        "h": 347
+      },
+      "anchor": {
+        "x": 1373,
+        "y": 779
+      }
+    },
+    {
+      "name": "clock_termite_stagger_5",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1588,
+        "y": 509,
+        "w": 352,
+        "h": 271
+      },
+      "anchor": {
+        "x": 1764,
+        "y": 779
+      }
+    },
+    {
+      "name": "tea_beetle_hit_1",
+      "source": {
+        "x": 56,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 45,
+        "y": 925,
+        "w": 324,
+        "h": 220
+      },
+      "anchor": {
+        "x": 207,
+        "y": 1144
+      }
+    },
+    {
+      "name": "tea_beetle_hit_2",
+      "source": {
+        "x": 440,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 444,
+        "y": 819,
+        "w": 344,
+        "h": 328
+      },
+      "anchor": {
+        "x": 616,
+        "y": 1146
+      }
+    },
+    {
+      "name": "tea_beetle_hit_3",
+      "source": {
+        "x": 824,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 839,
+        "y": 976,
+        "w": 314,
+        "h": 174
+      },
+      "anchor": {
+        "x": 996,
+        "y": 1149
+      }
+    },
+    {
+      "name": "tea_beetle_hit_4",
+      "source": {
+        "x": 1208,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1240,
+        "y": 859,
+        "w": 312,
+        "h": 291
+      },
+      "anchor": {
+        "x": 1396,
+        "y": 1149
+      }
+    },
+    {
+      "name": "tea_beetle_hit_5",
+      "source": {
+        "x": 1592,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1616,
+        "y": 928,
+        "w": 324,
+        "h": 216
+      },
+      "anchor": {
+        "x": 1778,
+        "y": 1143
+      }
+    },
+    {
+      "name": "tea_beetle_stagger_1",
+      "source": {
+        "x": 56,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 46,
+        "y": 1295,
+        "w": 320,
+        "h": 224
+      },
+      "anchor": {
+        "x": 206,
+        "y": 1518
+      }
+    },
+    {
+      "name": "tea_beetle_stagger_2",
+      "source": {
+        "x": 440,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 461,
+        "y": 1187,
+        "w": 325,
+        "h": 340
+      },
+      "anchor": {
+        "x": 624,
+        "y": 1526
+      }
+    },
+    {
+      "name": "tea_beetle_stagger_3",
+      "source": {
+        "x": 824,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 827,
+        "y": 1335,
+        "w": 308,
+        "h": 187
+      },
+      "anchor": {
+        "x": 981,
+        "y": 1521
+      }
+    },
+    {
+      "name": "tea_beetle_stagger_4",
+      "source": {
+        "x": 1208,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1237,
+        "y": 1191,
+        "w": 325,
+        "h": 330
+      },
+      "anchor": {
+        "x": 1400,
+        "y": 1520
+      }
+    },
+    {
+      "name": "tea_beetle_stagger_5",
+      "source": {
+        "x": 1592,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1616,
+        "y": 1309,
+        "w": 324,
+        "h": 212
+      },
+      "anchor": {
+        "x": 1778,
+        "y": 1520
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "clock_termite_hit",
+      "frames": [
+        {
+          "name": "clock_termite_hit_1",
+          "source": {
+            "x": 56,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 23,
+            "y": 105,
+            "w": 329,
+            "h": 284
+          },
+          "anchor": {
+            "x": 188,
+            "y": 388
+          }
+        },
+        {
+          "name": "clock_termite_hit_2",
+          "source": {
+            "x": 440,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 430,
+            "y": 47,
+            "w": 346,
+            "h": 341
+          },
+          "anchor": {
+            "x": 603,
+            "y": 387
+          }
+        },
+        {
+          "name": "clock_termite_hit_3",
+          "source": {
+            "x": 824,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 793,
+            "y": 161,
+            "w": 372,
+            "h": 229
+          },
+          "anchor": {
+            "x": 979,
+            "y": 389
+          }
+        },
+        {
+          "name": "clock_termite_hit_4",
+          "source": {
+            "x": 1208,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1213,
+            "y": 81,
+            "w": 330,
+            "h": 308
+          },
+          "anchor": {
+            "x": 1378,
+            "y": 388
+          }
+        },
+        {
+          "name": "clock_termite_hit_5",
+          "source": {
+            "x": 1592,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1602,
+            "y": 99,
+            "w": 329,
+            "h": 290
+          },
+          "anchor": {
+            "x": 1767,
+            "y": 388
+          }
+        }
+      ]
+    },
+    {
+      "name": "clock_termite_stagger",
+      "frames": [
+        {
+          "name": "clock_termite_stagger_1",
+          "source": {
+            "x": 56,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 19,
+            "y": 498,
+            "w": 348,
+            "h": 280
+          },
+          "anchor": {
+            "x": 193,
+            "y": 777
+          }
+        },
+        {
+          "name": "clock_termite_stagger_2",
+          "source": {
+            "x": 440,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 419,
+            "y": 432,
+            "w": 355,
+            "h": 349
+          },
+          "anchor": {
+            "x": 597,
+            "y": 780
+          }
+        },
+        {
+          "name": "clock_termite_stagger_3",
+          "source": {
+            "x": 824,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 792,
+            "y": 545,
+            "w": 337,
+            "h": 235
+          },
+          "anchor": {
+            "x": 961,
+            "y": 779
+          }
+        },
+        {
+          "name": "clock_termite_stagger_4",
+          "source": {
+            "x": 1208,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1189,
+            "y": 433,
+            "w": 367,
+            "h": 347
+          },
+          "anchor": {
+            "x": 1373,
+            "y": 779
+          }
+        },
+        {
+          "name": "clock_termite_stagger_5",
+          "source": {
+            "x": 1592,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1588,
+            "y": 509,
+            "w": 352,
+            "h": 271
+          },
+          "anchor": {
+            "x": 1764,
+            "y": 779
+          }
+        }
+      ]
+    },
+    {
+      "name": "tea_beetle_hit",
+      "frames": [
+        {
+          "name": "tea_beetle_hit_1",
+          "source": {
+            "x": 56,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 45,
+            "y": 925,
+            "w": 324,
+            "h": 220
+          },
+          "anchor": {
+            "x": 207,
+            "y": 1144
+          }
+        },
+        {
+          "name": "tea_beetle_hit_2",
+          "source": {
+            "x": 440,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 444,
+            "y": 819,
+            "w": 344,
+            "h": 328
+          },
+          "anchor": {
+            "x": 616,
+            "y": 1146
+          }
+        },
+        {
+          "name": "tea_beetle_hit_3",
+          "source": {
+            "x": 824,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 839,
+            "y": 976,
+            "w": 314,
+            "h": 174
+          },
+          "anchor": {
+            "x": 996,
+            "y": 1149
+          }
+        },
+        {
+          "name": "tea_beetle_hit_4",
+          "source": {
+            "x": 1208,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1240,
+            "y": 859,
+            "w": 312,
+            "h": 291
+          },
+          "anchor": {
+            "x": 1396,
+            "y": 1149
+          }
+        },
+        {
+          "name": "tea_beetle_hit_5",
+          "source": {
+            "x": 1592,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1616,
+            "y": 928,
+            "w": 324,
+            "h": 216
+          },
+          "anchor": {
+            "x": 1778,
+            "y": 1143
+          }
+        }
+      ]
+    },
+    {
+      "name": "tea_beetle_stagger",
+      "frames": [
+        {
+          "name": "tea_beetle_stagger_1",
+          "source": {
+            "x": 56,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 46,
+            "y": 1295,
+            "w": 320,
+            "h": 224
+          },
+          "anchor": {
+            "x": 206,
+            "y": 1518
+          }
+        },
+        {
+          "name": "tea_beetle_stagger_2",
+          "source": {
+            "x": 440,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 461,
+            "y": 1187,
+            "w": 325,
+            "h": 340
+          },
+          "anchor": {
+            "x": 624,
+            "y": 1526
+          }
+        },
+        {
+          "name": "tea_beetle_stagger_3",
+          "source": {
+            "x": 824,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 827,
+            "y": 1335,
+            "w": 308,
+            "h": 187
+          },
+          "anchor": {
+            "x": 981,
+            "y": 1521
+          }
+        },
+        {
+          "name": "tea_beetle_stagger_4",
+          "source": {
+            "x": 1208,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1237,
+            "y": 1191,
+            "w": 325,
+            "h": 330
+          },
+          "anchor": {
+            "x": 1400,
+            "y": 1520
+          }
+        },
+        {
+          "name": "tea_beetle_stagger_5",
+          "source": {
+            "x": 1592,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1616,
+            "y": 1309,
+            "w": 324,
+            "h": 212
+          },
+          "anchor": {
+            "x": 1778,
+            "y": 1520
+          }
+        }
+      ]
+    }
+  ]
+}

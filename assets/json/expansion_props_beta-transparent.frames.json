@@ -1,0 +1,182 @@
+{
+  "image": "/generated-assets/expansion_props_beta-transparent.webp",
+  "grid": {
+    "cols": 3,
+    "rows": 3,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "tea_leaf_fan",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 20,
+        "y": 19,
+        "w": 364,
+        "h": 359
+      },
+      "anchor": {
+        "x": 202,
+        "y": 377
+      }
+    },
+    {
+      "name": "porcelain_valve",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 440,
+        "y": 24,
+        "w": 320,
+        "h": 359
+      },
+      "anchor": {
+        "x": 600,
+        "y": 382
+      }
+    },
+    {
+      "name": "rolling_cup",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 824,
+        "y": 24,
+        "w": 325,
+        "h": 356
+      },
+      "anchor": {
+        "x": 987,
+        "y": 379
+      }
+    },
+    {
+      "name": "rain_chime",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 61,
+        "y": 401,
+        "w": 280,
+        "h": 382
+      },
+      "anchor": {
+        "x": 201,
+        "y": 782
+      }
+    },
+    {
+      "name": "flood_seal",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 449,
+        "y": 403,
+        "w": 310,
+        "h": 380
+      },
+      "anchor": {
+        "x": 604,
+        "y": 782
+      }
+    },
+    {
+      "name": "echo_gong",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 807,
+        "y": 419,
+        "w": 370,
+        "h": 338
+      },
+      "anchor": {
+        "x": 992,
+        "y": 756
+      }
+    },
+    {
+      "name": "firefly_prism",
+      "source": {
+        "x": 56,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 70,
+        "y": 802,
+        "w": 241,
+        "h": 379
+      },
+      "anchor": {
+        "x": 191,
+        "y": 1180
+      }
+    },
+    {
+      "name": "reed_cradle",
+      "source": {
+        "x": 440,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 419,
+        "y": 801,
+        "w": 354,
+        "h": 349
+      },
+      "anchor": {
+        "x": 596,
+        "y": 1149
+      }
+    },
+    {
+      "name": "dragon_egg_lamp",
+      "source": {
+        "x": 824,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 848,
+        "y": 802,
+        "w": 284,
+        "h": 372
+      },
+      "anchor": {
+        "x": 990,
+        "y": 1173
+      }
+    }
+  ]
+}

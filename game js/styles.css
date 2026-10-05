@@ -1,0 +1,699 @@
+/* Template contract — keep this sizing block intact when re-theming.
+   The game runs in an iframe inside iOS/Android WebViews, where viewport
+   units (100vh/100dvh/100vw) go stale after the view scrolls or hides and
+   leave blank bands; this container-percentage chain is what sizes the game
+   reliably. Restyle colors, fonts, and visuals freely, but do not replace
+   these sizing/overflow rules or size any root container in viewport units. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Low-specificity flex/grid shrink floor: intrinsic content must not widen or
+   deepen a layout track beyond the handheld frame. Component minimums win. */
+:where(#app *) {
+  min-width: 0;
+  min-height: 0;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: #171c1a;
+  color: #f5f0df;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+body {
+  position: fixed;
+  inset: 0;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  /* Text strokes are centered on glyph contours. Paint the fill last so an
+     outline stays outside instead of cutting into counters and thin strokes. */
+  paint-order: stroke fill;
+  /* Size container: children size type/spacing in cqw/cqh/cqmin units,
+     which track the actual game frame (viewport units are banned above). */
+  container-type: size;
+}
+
+/* Do not inherit the HTML text safeguard into SVG artwork, whose fill/stroke
+   layering may intentionally use the SVG default. */
+#app svg {
+  paint-order: normal;
+}
+
+.game-shell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #e8e0cb;
+  isolation: isolate;
+}
+
+canvas,
+.game-surface {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button,
+[role="button"] {
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Template contract — fit-mechanics primitives. Layout is top-down: the
+   frame is the budget and content adapts to its box, so overflow is
+   impossible by construction. These classes carry ONLY fit mechanics —
+   shrink/wrap behavior, min-width: 0 (flex children otherwise refuse to
+   shrink below their text), truncation, container-query type scaling, 44px
+   touch minimums, and gaps. They are deliberately unstyled: their look
+   (colors, backgrounds, radii, borders, fonts) is yours to build from the
+   game's art direction. Custom controls and layouts are welcome too — keep
+   the same fit rules. Do not remove the sizing/min/max/overflow/gap rules. */
+
+/* Horizontal band of HUD stats. Wraps as a final containment fallback;
+   compact handheld frames can be short as well as narrow, so keep the
+   primary row iconic and hide/truncate secondary labels before relying on a
+   second line. Grid-track friendly: use as the `auto` rows of a
+   `grid-template-rows: auto minmax(0, 1fr) auto` page layout. */
+.hud-row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+  gap: clamp(6px, 2cqw, 14px);
+  padding: clamp(6px, 2cqmin, 12px);
+}
+
+/* Compact HUD stat (score, timer, lives). Truncates rather than breaking
+   layout as a last resort; add `flex-shrink: 0` to a badge that must never
+   truncate (score, timer) so decorative neighbors compress first. */
+.badge {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  min-width: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-inline: 0.4em;
+  font-size: clamp(12px, 3.5cqw, 18px);
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Discrete status pips (hearts, lives, stars, ammo). Pips are fixed-size
+   flex items, NEVER repeated glyphs inside a truncating text run: glyphs
+   like ♥ resolve through different fallback fonts per browser, take
+   different widths, and get clipped by ellipsis in Firefox/Safari but not
+   Chrome. The fixed box is what makes a pip safe — its content can be
+   whatever fits the game: a glyph centered in the box (the box neutralizes
+   glyph-width differences), a generated sprite via `background: url(...)
+   center/contain no-repeat`, or an SVG/mask shape. */
+.pip-row {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(2px, 0.8cqw, 6px);
+}
+
+.pip {
+  flex: 0 0 auto;
+  width: clamp(12px, 4cqw, 20px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* Touch-control band. */
+.controls-row {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  gap: clamp(12px, 3cqw, 20px);
+  padding: clamp(8px, 2cqmin, 14px);
+}
+
+/* Finger-sized control. 44px is the minimum touch target; the gap above is
+   the minimum separation. flex: 0 1 auto lets a crowded row shrink buttons
+   down to (but never below) the minimum. overflow keeps legacy raw-text
+   buttons contained; wrap text in .control-label for a visible ellipsis. */
+.control-btn {
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  min-width: 44px;
+  max-width: 100%;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  font-size: clamp(13px, 3.5cqw, 18px);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.control-label {
+  min-width: 0;
+  max-width: 100%;
+  padding-inline: 0.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hud-layer {
+  position: absolute;
+  z-index: 5;
+  inset: 0 0 auto;
+  pointer-events: none;
+}
+
+.ink-hud {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: clamp(7px, 2cqmin, 12px);
+  color: #f7f1df;
+}
+
+.health-cluster,
+.hud-tools,
+.area-badge {
+  display: flex;
+  align-items: center;
+  gap: clamp(5px, 1.5cqw, 10px);
+}
+
+.health-cluster,
+.hud-tools {
+  padding: clamp(4px, 1.2cqmin, 8px);
+  border: 2px solid rgba(246, 240, 220, 0.78);
+  border-radius: 7px;
+  background: rgba(18, 24, 22, 0.84);
+  box-shadow: 3px 3px 0 rgba(91, 43, 35, 0.72);
+}
+
+.portrait-stamp {
+  width: clamp(27px, 8cqw, 42px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 2px solid #d15b47;
+  color: #171c1a;
+  background: #eee6d2;
+  font-family: "Cormorant SC", serif;
+  font-size: clamp(17px, 5cqw, 27px);
+  font-weight: 700;
+}
+
+.health-pips {
+  gap: clamp(2px, .65cqw, 4px);
+}
+
+.leaf-pip {
+  width: clamp(10px, 3.2cqw, 17px);
+  border: 2px solid #a9b8ad;
+  border-radius: 90% 10% 90% 10%;
+  transform: rotate(-24deg);
+  background: rgba(227, 230, 215, 0.25);
+}
+
+.leaf-pip.full {
+  border-color: #79dfad;
+  background: #48b983;
+  box-shadow: inset 2px 1px 0 rgba(224, 255, 237, 0.55);
+}
+
+.area-badge {
+  max-width: 38%;
+  padding: .35em .6em;
+  border-block: 2px solid rgba(33, 40, 36, .72);
+  color: #222a27;
+  background: rgba(241, 233, 211, .88);
+  font-family: "Cormorant SC", serif;
+  font-size: clamp(12px, 3.4cqw, 18px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.area-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.room-mark {
+  flex: 0 0 auto;
+  color: #9a4435;
+}
+
+.collectible-count {
+  color: #8ce1b5;
+  font-size: clamp(11px, 3.1cqw, 16px);
+  padding-inline: .2em;
+}
+
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  border: 2px solid rgba(245, 237, 214, .82);
+  border-radius: 5px;
+  color: #f4edd8;
+  background: #202825;
+  font: 700 clamp(18px, 5cqw, 25px)/1 "Cormorant SC", serif;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.energy-wrap {
+  position: relative;
+  width: clamp(132px, 38cqw, 240px);
+  height: clamp(12px, 3.7cqh, 20px);
+  margin-inline-start: clamp(10px, 3cqw, 18px);
+  overflow: hidden;
+  border: 2px solid rgba(239, 234, 216, .84);
+  border-radius: 3px;
+  background: rgba(22, 29, 27, .84);
+}
+
+.energy-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #2f9b70, #72e4b2 70%, #d7efc0);
+  transition: width .12s linear;
+}
+
+.energy-wrap span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #f9f3df;
+  font-size: clamp(7px, 1.8cqw, 10px);
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.boss-wrap {
+  width: min(78%, 620px);
+  margin: clamp(5px, 1.2cqh, 9px) auto 0;
+  color: #f1e6cc;
+  text-align: center;
+  font: 700 clamp(11px, 3cqw, 16px)/1.1 "Cormorant SC", serif;
+}
+
+.boss-wrap > div {
+  height: 11px;
+  margin-top: 4px;
+  padding: 2px;
+  border: 1px solid #ede3ca;
+  background: rgba(17, 21, 19, .86);
+}
+
+.boss-wrap i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #a74231, #e27a45);
+}
+
+.context-prompt,
+.toast {
+  position: absolute;
+  z-index: 7;
+  left: 50%;
+  width: max-content;
+  max-width: min(82%, 520px);
+  transform: translateX(-50%);
+  padding: .42em .76em;
+  border: 2px solid rgba(235, 228, 206, .86);
+  border-radius: 6px;
+  color: #f6efdc;
+  background: rgba(22, 29, 26, .88);
+  font-size: clamp(11px, 3.2cqw, 16px);
+  line-height: 1.2;
+  text-align: center;
+  pointer-events: none;
+}
+
+.context-prompt {
+  bottom: clamp(84px, 18cqh, 126px);
+}
+
+.toast {
+  top: clamp(76px, 14cqh, 118px);
+  border-color: rgba(94, 215, 163, .8);
+  animation: stamp-in .18s ease-out;
+}
+
+@keyframes stamp-in {
+  from { opacity: 0; transform: translateX(-50%) scale(.88); }
+}
+
+.touch-controls {
+  position: absolute;
+  z-index: 6;
+  inset: auto 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: clamp(8px, 2.3cqmin, 16px);
+  pointer-events: none;
+}
+
+.move-pad,
+.action-pad {
+  display: grid;
+  align-items: end;
+  gap: clamp(8px, 2cqw, 13px);
+  pointer-events: auto;
+}
+
+.move-pad {
+  grid-template-columns: repeat(3, minmax(44px, 1fr));
+}
+
+.action-pad {
+  grid-template-columns: repeat(3, minmax(44px, 1fr));
+}
+
+.touch-btn {
+  width: clamp(46px, 13cqmin, 64px);
+  aspect-ratio: 1;
+  min-width: 44px;
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 2px solid rgba(243, 237, 219, .76);
+  border-radius: 50%;
+  color: #f6efdd;
+  background: rgba(20, 28, 25, .67);
+  box-shadow: inset 0 0 0 3px rgba(25, 36, 32, .34);
+  font: 700 clamp(15px, 4.5cqw, 23px)/1 Inter, sans-serif;
+  backdrop-filter: blur(2px);
+}
+
+.touch-btn.rush {
+  color: #85e5b8;
+  border-color: rgba(91, 218, 163, .78);
+  font-size: clamp(9px, 2.5cqw, 12px);
+}
+
+.touch-btn.rush.locked {
+  opacity: .48;
+  border-style: dashed;
+}
+
+.touch-btn.attack {
+  border-color: rgba(211, 91, 71, .88);
+}
+
+.touch-btn.jump {
+  transform: translateY(clamp(-8px, -1.6cqh, -15px));
+}
+
+.touch-btn.is-held {
+  transform: scale(.9);
+  background: rgba(62, 156, 113, .82);
+}
+
+.touch-btn.jump.is-held {
+  transform: translateY(clamp(-8px, -1.6cqh, -15px)) scale(.9);
+}
+
+.overlay {
+  position: absolute;
+  z-index: 20;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: clamp(14px, 4cqmin, 28px);
+  background: rgba(13, 20, 18, .72);
+  backdrop-filter: blur(5px);
+}
+
+.overlay-panel {
+  width: min(100%, 540px);
+  max-height: 100%;
+  overflow: auto;
+  padding: clamp(14px, 4cqmin, 26px);
+  border: 3px double #2b3732;
+  outline: 2px solid rgba(235, 226, 201, .84);
+  color: #202724;
+  background: #eee6d2;
+  box-shadow: 8px 9px 0 rgba(15, 22, 20, .5);
+}
+
+.compact-panel {
+  width: min(84%, 390px);
+  text-align: center;
+}
+
+.compact-panel h1,
+.overlay-panel h2 {
+  margin: .25em 0 .55em;
+  font-family: "Cormorant SC", serif;
+  font-size: min(10cqw, 9cqh, 38px);
+  line-height: 1;
+}
+
+.ink-seal,
+.result-seal {
+  width: clamp(46px, 13cqmin, 72px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  border: 4px double #aa4636;
+  color: #a44132;
+  font-family: serif;
+  font-size: clamp(25px, 8cqmin, 42px);
+  transform: rotate(-4deg);
+}
+
+.load-track {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  border: 2px solid #27332e;
+  background: #d2c8ae;
+}
+
+.load-track i {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #3aa474;
+  transition: width .18s ease;
+}
+
+.load-copy {
+  margin: .75em 0 0;
+  font-size: clamp(12px, 3.3cqw, 17px);
+}
+
+.overlay-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.overlay-head h2 {
+  margin: 0;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(6px, 1.7cqmin, 11px);
+  margin-top: 14px;
+}
+
+.map-node {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: .55em;
+  padding: .5em;
+  border: 2px solid #7e7664;
+  opacity: .42;
+  font-size: clamp(11px, 3cqw, 15px);
+}
+
+.map-node b {
+  width: 1.7em;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: #ede5d0;
+  background: #2b3430;
+}
+
+.map-node span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.map-node.visited {
+  border-color: #3b9b70;
+  opacity: 1;
+}
+
+.ability-strip {
+  min-height: 2.3em;
+  margin-top: 12px;
+  padding: .5em;
+  border-block: 1px solid #867b65;
+  color: #376e56;
+  font-size: clamp(11px, 3cqw, 15px);
+  text-align: center;
+}
+
+.skin-heading {
+  margin: 12px 0 7px;
+  font: 700 clamp(13px, 3.4cqw, 18px)/1 "Cormorant SC", serif;
+  text-align: center;
+}
+
+.skin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.skin-grid button {
+  min-height: 44px;
+  padding: .45em .5em;
+  border: 2px solid #7e7664;
+  color: #28332e;
+  background: #dfd4ba;
+  font: 600 clamp(10px, 2.8cqw, 14px)/1.15 Inter, sans-serif;
+}
+
+.skin-grid button.selected {
+  border-color: #2e8f66;
+  color: #f5eedc;
+  background: #2e6f55;
+}
+
+.result-panel {
+  text-align: center;
+}
+
+.result-copy {
+  margin: .2em auto 1em;
+  max-width: 34em;
+  font-size: clamp(12px, 3.4cqw, 17px);
+}
+
+.result-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.result-stats span {
+  padding: .55em .3em;
+  border: 1px solid #8a806b;
+  font-size: clamp(10px, 2.8cqw, 14px);
+}
+
+.result-stats b {
+  display: block;
+  margin-top: .2em;
+  color: #347657;
+}
+
+.ink-button {
+  min-width: 132px;
+  min-height: 44px;
+  padding: .55em .9em;
+  border: 2px solid #eee5ce;
+  outline: 2px solid #27322d;
+  color: #f6efdc;
+  background: #27332e;
+  font: 700 clamp(13px, 3.5cqw, 18px)/1 Inter, sans-serif;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .touch-controls {
+    opacity: .78;
+  }
+
+  .context-prompt {
+    bottom: clamp(84px, 18cqh, 126px);
+  }
+}
+
+@media (max-height: 470px) {
+  .portrait-stamp,
+  .energy-wrap span {
+    display: none;
+  }
+
+  .touch-btn {
+    width: 46px;
+  }
+
+  .context-prompt {
+    bottom: 68px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toast,
+  .energy-fill,
+  .load-track i {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "playerSpeed": {
+    "type": "number",
+    "value": 310,
+    "min": 220,
+    "max": 430,
+    "step": 10,
+    "name": "Kecepatan Bao",
+    "group": "gameplay",
+    "index": 1
+  },
+  "jumpForce": {
+    "type": "number",
+    "value": 650,
+    "min": 500,
+    "max": 850,
+    "step": 10,
+    "name": "Kekuatan Lompat",
+    "group": "gameplay",
+    "index": 2
+  },
+  "gravity": {
+    "type": "number",
+    "value": 1700,
+    "min": 1200,
+    "max": 2300,
+    "step": 50,
+    "name": "Gravitasi",
+    "group": "gameplay",
+    "index": 3
+  },
+  "enemyDamage": {
+    "type": "number",
+    "value": 1,
+    "min": 1,
+    "max": 3,
+    "step": 1,
+    "name": "Damage Musuh",
+    "group": "gameplay",
+    "index": 4
+  },
+  "cameraSmoothing": {
+    "type": "number",
+    "value": 7,
+    "min": 2,
+    "max": 14,
+    "step": 0.5,
+    "name": "Kelenturan Kamera",
+    "group": "visual",
+    "index": 5
+  },
+  "effectsIntensity": {
+    "type": "number",
+    "value": 1,
+    "min": 0,
+    "max": 2,
+    "step": 0.1,
+    "name": "Intensitas Efek",
+    "group": "visual",
+    "index": 6
+  }
+}

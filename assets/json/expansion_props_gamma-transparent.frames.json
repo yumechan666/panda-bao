@@ -1,0 +1,201 @@
+{
+  "image": "/generated-assets/expansion_props_gamma-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "bamboo_piston",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 30,
+        "y": 25,
+        "w": 400,
+        "h": 337
+      },
+      "anchor": {
+        "x": 230,
+        "y": 361
+      }
+    },
+    {
+      "name": "waterwheel_lift",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 424,
+        "y": 26,
+        "w": 347,
+        "h": 356
+      },
+      "anchor": {
+        "x": 598,
+        "y": 381
+      }
+    },
+    {
+      "name": "gear_lock",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 802,
+        "y": 27,
+        "w": 369,
+        "h": 347
+      },
+      "anchor": {
+        "x": 987,
+        "y": 373
+      }
+    },
+    {
+      "name": "cloud_bubble",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1201,
+        "y": 47,
+        "w": 333,
+        "h": 316
+      },
+      "anchor": {
+        "x": 1368,
+        "y": 362
+      }
+    },
+    {
+      "name": "koi_whisker_rope",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1578,
+        "y": 39,
+        "w": 349,
+        "h": 352
+      },
+      "anchor": {
+        "x": 1753,
+        "y": 390
+      }
+    },
+    {
+      "name": "thunder_pearl",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 41,
+        "y": 421,
+        "w": 346,
+        "h": 341
+      },
+      "anchor": {
+        "x": 214,
+        "y": 761
+      }
+    },
+    {
+      "name": "moon_prism",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 428,
+        "y": 407,
+        "w": 344,
+        "h": 370
+      },
+      "anchor": {
+        "x": 600,
+        "y": 776
+      }
+    },
+    {
+      "name": "shadow_clone_seal",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 801,
+        "y": 410,
+        "w": 368,
+        "h": 368
+      },
+      "anchor": {
+        "x": 985,
+        "y": 777
+      }
+    },
+    {
+      "name": "root_ladder",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1232,
+        "y": 404,
+        "w": 293,
+        "h": 376
+      },
+      "anchor": {
+        "x": 1379,
+        "y": 779
+      }
+    },
+    {
+      "name": "eclipse_feather",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1571,
+        "y": 407,
+        "w": 356,
+        "h": 369
+      },
+      "anchor": {
+        "x": 1749,
+        "y": 775
+      }
+    }
+  ]
+}

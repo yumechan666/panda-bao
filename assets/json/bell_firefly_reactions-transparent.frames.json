@@ -1,0 +1,793 @@
+{
+  "image": "/generated-assets/bell_firefly_reactions-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 4,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "bell_toad_hit_1",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 46,
+        "y": 103,
+        "w": 321,
+        "h": 247
+      },
+      "anchor": {
+        "x": 207,
+        "y": 349
+      }
+    },
+    {
+      "name": "bell_toad_hit_2",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 426,
+        "y": 29,
+        "w": 349,
+        "h": 321
+      },
+      "anchor": {
+        "x": 601,
+        "y": 349
+      }
+    },
+    {
+      "name": "bell_toad_hit_3",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 820,
+        "y": 81,
+        "w": 314,
+        "h": 264
+      },
+      "anchor": {
+        "x": 977,
+        "y": 344
+      }
+    },
+    {
+      "name": "bell_toad_hit_4",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1204,
+        "y": 108,
+        "w": 326,
+        "h": 243
+      },
+      "anchor": {
+        "x": 1367,
+        "y": 350
+      }
+    },
+    {
+      "name": "bell_toad_hit_5",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1590,
+        "y": 104,
+        "w": 328,
+        "h": 248
+      },
+      "anchor": {
+        "x": 1754,
+        "y": 351
+      }
+    },
+    {
+      "name": "bell_toad_stagger_1",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 38,
+        "y": 455,
+        "w": 330,
+        "h": 256
+      },
+      "anchor": {
+        "x": 203,
+        "y": 710
+      }
+    },
+    {
+      "name": "bell_toad_stagger_2",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 428,
+        "y": 401,
+        "w": 353,
+        "h": 328
+      },
+      "anchor": {
+        "x": 605,
+        "y": 728
+      }
+    },
+    {
+      "name": "bell_toad_stagger_3",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 801,
+        "y": 519,
+        "w": 367,
+        "h": 219
+      },
+      "anchor": {
+        "x": 985,
+        "y": 737
+      }
+    },
+    {
+      "name": "bell_toad_stagger_4",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1196,
+        "y": 452,
+        "w": 338,
+        "h": 265
+      },
+      "anchor": {
+        "x": 1365,
+        "y": 716
+      }
+    },
+    {
+      "name": "bell_toad_stagger_5",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1586,
+        "y": 458,
+        "w": 334,
+        "h": 256
+      },
+      "anchor": {
+        "x": 1753,
+        "y": 713
+      }
+    },
+    {
+      "name": "firefly_drake_hit_1",
+      "source": {
+        "x": 56,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 71,
+        "y": 785,
+        "w": 286,
+        "h": 351
+      },
+      "anchor": {
+        "x": 214,
+        "y": 1135
+      }
+    },
+    {
+      "name": "firefly_drake_hit_2",
+      "source": {
+        "x": 440,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 422,
+        "y": 782,
+        "w": 328,
+        "h": 356
+      },
+      "anchor": {
+        "x": 586,
+        "y": 1137
+      }
+    },
+    {
+      "name": "firefly_drake_hit_3",
+      "source": {
+        "x": 824,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 825,
+        "y": 809,
+        "w": 305,
+        "h": 307
+      },
+      "anchor": {
+        "x": 978,
+        "y": 1115
+      }
+    },
+    {
+      "name": "firefly_drake_hit_4",
+      "source": {
+        "x": 1208,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1219,
+        "y": 855,
+        "w": 303,
+        "h": 268
+      },
+      "anchor": {
+        "x": 1371,
+        "y": 1122
+      }
+    },
+    {
+      "name": "firefly_drake_hit_5",
+      "source": {
+        "x": 1592,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1601,
+        "y": 787,
+        "w": 302,
+        "h": 349
+      },
+      "anchor": {
+        "x": 1752,
+        "y": 1135
+      }
+    },
+    {
+      "name": "firefly_drake_stagger_1",
+      "source": {
+        "x": 56,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 64,
+        "y": 1203,
+        "w": 276,
+        "h": 326
+      },
+      "anchor": {
+        "x": 202,
+        "y": 1528
+      }
+    },
+    {
+      "name": "firefly_drake_stagger_2",
+      "source": {
+        "x": 440,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 435,
+        "y": 1177,
+        "w": 320,
+        "h": 369
+      },
+      "anchor": {
+        "x": 595,
+        "y": 1545
+      }
+    },
+    {
+      "name": "firefly_drake_stagger_3",
+      "source": {
+        "x": 824,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 819,
+        "y": 1255,
+        "w": 320,
+        "h": 282
+      },
+      "anchor": {
+        "x": 979,
+        "y": 1536
+      }
+    },
+    {
+      "name": "firefly_drake_stagger_4",
+      "source": {
+        "x": 1208,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1229,
+        "y": 1198,
+        "w": 295,
+        "h": 340
+      },
+      "anchor": {
+        "x": 1377,
+        "y": 1537
+      }
+    },
+    {
+      "name": "firefly_drake_stagger_5",
+      "source": {
+        "x": 1592,
+        "y": 1208,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1595,
+        "y": 1176,
+        "w": 301,
+        "h": 368
+      },
+      "anchor": {
+        "x": 1746,
+        "y": 1543
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "bell_toad_hit",
+      "frames": [
+        {
+          "name": "bell_toad_hit_1",
+          "source": {
+            "x": 56,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 46,
+            "y": 103,
+            "w": 321,
+            "h": 247
+          },
+          "anchor": {
+            "x": 207,
+            "y": 349
+          }
+        },
+        {
+          "name": "bell_toad_hit_2",
+          "source": {
+            "x": 440,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 426,
+            "y": 29,
+            "w": 349,
+            "h": 321
+          },
+          "anchor": {
+            "x": 601,
+            "y": 349
+          }
+        },
+        {
+          "name": "bell_toad_hit_3",
+          "source": {
+            "x": 824,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 820,
+            "y": 81,
+            "w": 314,
+            "h": 264
+          },
+          "anchor": {
+            "x": 977,
+            "y": 344
+          }
+        },
+        {
+          "name": "bell_toad_hit_4",
+          "source": {
+            "x": 1208,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1204,
+            "y": 108,
+            "w": 326,
+            "h": 243
+          },
+          "anchor": {
+            "x": 1367,
+            "y": 350
+          }
+        },
+        {
+          "name": "bell_toad_hit_5",
+          "source": {
+            "x": 1592,
+            "y": 56,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1590,
+            "y": 104,
+            "w": 328,
+            "h": 248
+          },
+          "anchor": {
+            "x": 1754,
+            "y": 351
+          }
+        }
+      ]
+    },
+    {
+      "name": "bell_toad_stagger",
+      "frames": [
+        {
+          "name": "bell_toad_stagger_1",
+          "source": {
+            "x": 56,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 38,
+            "y": 455,
+            "w": 330,
+            "h": 256
+          },
+          "anchor": {
+            "x": 203,
+            "y": 710
+          }
+        },
+        {
+          "name": "bell_toad_stagger_2",
+          "source": {
+            "x": 440,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 428,
+            "y": 401,
+            "w": 353,
+            "h": 328
+          },
+          "anchor": {
+            "x": 605,
+            "y": 728
+          }
+        },
+        {
+          "name": "bell_toad_stagger_3",
+          "source": {
+            "x": 824,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 801,
+            "y": 519,
+            "w": 367,
+            "h": 219
+          },
+          "anchor": {
+            "x": 985,
+            "y": 737
+          }
+        },
+        {
+          "name": "bell_toad_stagger_4",
+          "source": {
+            "x": 1208,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1196,
+            "y": 452,
+            "w": 338,
+            "h": 265
+          },
+          "anchor": {
+            "x": 1365,
+            "y": 716
+          }
+        },
+        {
+          "name": "bell_toad_stagger_5",
+          "source": {
+            "x": 1592,
+            "y": 440,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1586,
+            "y": 458,
+            "w": 334,
+            "h": 256
+          },
+          "anchor": {
+            "x": 1753,
+            "y": 713
+          }
+        }
+      ]
+    },
+    {
+      "name": "firefly_drake_hit",
+      "frames": [
+        {
+          "name": "firefly_drake_hit_1",
+          "source": {
+            "x": 56,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 71,
+            "y": 785,
+            "w": 286,
+            "h": 351
+          },
+          "anchor": {
+            "x": 214,
+            "y": 1135
+          }
+        },
+        {
+          "name": "firefly_drake_hit_2",
+          "source": {
+            "x": 440,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 422,
+            "y": 782,
+            "w": 328,
+            "h": 356
+          },
+          "anchor": {
+            "x": 586,
+            "y": 1137
+          }
+        },
+        {
+          "name": "firefly_drake_hit_3",
+          "source": {
+            "x": 824,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 825,
+            "y": 809,
+            "w": 305,
+            "h": 307
+          },
+          "anchor": {
+            "x": 978,
+            "y": 1115
+          }
+        },
+        {
+          "name": "firefly_drake_hit_4",
+          "source": {
+            "x": 1208,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1219,
+            "y": 855,
+            "w": 303,
+            "h": 268
+          },
+          "anchor": {
+            "x": 1371,
+            "y": 1122
+          }
+        },
+        {
+          "name": "firefly_drake_hit_5",
+          "source": {
+            "x": 1592,
+            "y": 824,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1601,
+            "y": 787,
+            "w": 302,
+            "h": 349
+          },
+          "anchor": {
+            "x": 1752,
+            "y": 1135
+          }
+        }
+      ]
+    },
+    {
+      "name": "firefly_drake_stagger",
+      "frames": [
+        {
+          "name": "firefly_drake_stagger_1",
+          "source": {
+            "x": 56,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 64,
+            "y": 1203,
+            "w": 276,
+            "h": 326
+          },
+          "anchor": {
+            "x": 202,
+            "y": 1528
+          }
+        },
+        {
+          "name": "firefly_drake_stagger_2",
+          "source": {
+            "x": 440,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 435,
+            "y": 1177,
+            "w": 320,
+            "h": 369
+          },
+          "anchor": {
+            "x": 595,
+            "y": 1545
+          }
+        },
+        {
+          "name": "firefly_drake_stagger_3",
+          "source": {
+            "x": 824,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 819,
+            "y": 1255,
+            "w": 320,
+            "h": 282
+          },
+          "anchor": {
+            "x": 979,
+            "y": 1536
+          }
+        },
+        {
+          "name": "firefly_drake_stagger_4",
+          "source": {
+            "x": 1208,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1229,
+            "y": 1198,
+            "w": 295,
+            "h": 340
+          },
+          "anchor": {
+            "x": 1377,
+            "y": 1537
+          }
+        },
+        {
+          "name": "firefly_drake_stagger_5",
+          "source": {
+            "x": 1592,
+            "y": 1208,
+            "w": 320,
+            "h": 320
+          },
+          "content": {
+            "x": 1595,
+            "y": 1176,
+            "w": 301,
+            "h": 368
+          },
+          "anchor": {
+            "x": 1746,
+            "y": 1543
+          }
+        }
+      ]
+    }
+  ]
+}

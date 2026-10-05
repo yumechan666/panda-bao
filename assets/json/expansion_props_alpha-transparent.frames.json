@@ -1,0 +1,182 @@
+{
+  "image": "/generated-assets/expansion_props_alpha-transparent.webp",
+  "grid": {
+    "cols": 3,
+    "rows": 3,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "fold_lantern",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 106,
+        "y": 3,
+        "w": 229,
+        "h": 383
+      },
+      "anchor": {
+        "x": 221,
+        "y": 385
+      }
+    },
+    {
+      "name": "ink_ceiling_hook",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 410,
+        "y": 12,
+        "w": 377,
+        "h": 373
+      },
+      "anchor": {
+        "x": 599,
+        "y": 384
+      }
+    },
+    {
+      "name": "paper_press",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 808,
+        "y": 28,
+        "w": 377,
+        "h": 358
+      },
+      "anchor": {
+        "x": 997,
+        "y": 385
+      }
+    },
+    {
+      "name": "storm_kite_sail",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 15,
+        "y": 406,
+        "w": 400,
+        "h": 363
+      },
+      "anchor": {
+        "x": 215,
+        "y": 768
+      }
+    },
+    {
+      "name": "wind_harp",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 444,
+        "y": 399,
+        "w": 328,
+        "h": 392
+      },
+      "anchor": {
+        "x": 608,
+        "y": 790
+      }
+    },
+    {
+      "name": "cliff_vane",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 811,
+        "y": 413,
+        "w": 371,
+        "h": 377
+      },
+      "anchor": {
+        "x": 997,
+        "y": 789
+      }
+    },
+    {
+      "name": "time_spool",
+      "source": {
+        "x": 56,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 33,
+        "y": 816,
+        "w": 354,
+        "h": 364
+      },
+      "anchor": {
+        "x": 210,
+        "y": 1179
+      }
+    },
+    {
+      "name": "bookworm_rail",
+      "source": {
+        "x": 440,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 412,
+        "y": 832,
+        "w": 376,
+        "h": 301
+      },
+      "anchor": {
+        "x": 600,
+        "y": 1132
+      }
+    },
+    {
+      "name": "pendulum_bridge",
+      "source": {
+        "x": 824,
+        "y": 824,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 808,
+        "y": 815,
+        "w": 368,
+        "h": 346
+      },
+      "anchor": {
+        "x": 992,
+        "y": 1160
+      }
+    }
+  ]
+}

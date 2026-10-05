@@ -1,0 +1,201 @@
+{
+  "image": "/generated-assets/hazard_reward_props-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "golden_sprout",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 39,
+        "y": 48,
+        "w": 286,
+        "h": 328
+      },
+      "anchor": {
+        "x": 182,
+        "y": 375
+      }
+    },
+    {
+      "name": "crumble_bridge",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 388,
+        "y": 97,
+        "w": 379,
+        "h": 227
+      },
+      "anchor": {
+        "x": 578,
+        "y": 323
+      }
+    },
+    {
+      "name": "spike_root",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 808,
+        "y": 28,
+        "w": 351,
+        "h": 352
+      },
+      "anchor": {
+        "x": 984,
+        "y": 379
+      }
+    },
+    {
+      "name": "gear",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1207,
+        "y": 25,
+        "w": 360,
+        "h": 361
+      },
+      "anchor": {
+        "x": 1387,
+        "y": 385
+      }
+    },
+    {
+      "name": "flame_vent",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1620,
+        "y": 33,
+        "w": 316,
+        "h": 355
+      },
+      "anchor": {
+        "x": 1778,
+        "y": 387
+      }
+    },
+    {
+      "name": "ice_block",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 26,
+        "y": 435,
+        "w": 325,
+        "h": 336
+      },
+      "anchor": {
+        "x": 189,
+        "y": 770
+      }
+    },
+    {
+      "name": "hot_spring",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 387,
+        "y": 431,
+        "w": 396,
+        "h": 339
+      },
+      "anchor": {
+        "x": 585,
+        "y": 769
+      }
+    },
+    {
+      "name": "jade_shard",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 838,
+        "y": 441,
+        "w": 278,
+        "h": 315
+      },
+      "anchor": {
+        "x": 977,
+        "y": 755
+      }
+    },
+    {
+      "name": "leaf_emblem",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1217,
+        "y": 430,
+        "w": 313,
+        "h": 376
+      },
+      "anchor": {
+        "x": 1374,
+        "y": 805
+      }
+    },
+    {
+      "name": "bamboo_relic",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1622,
+        "y": 441,
+        "w": 316,
+        "h": 344
+      },
+      "anchor": {
+        "x": 1780,
+        "y": 784
+      }
+    }
+  ]
+}
